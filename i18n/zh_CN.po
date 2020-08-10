@@ -1,0 +1,312 @@
+# Chinese translations for PACKAGE package
+# PACKAGE 软件包的简体中文翻译.
+# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 张志文 <what0o0@qq.com>, 2020.
+#
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "PO-Revision-Date: 2020-06-17 20:46+0800\n"
+        "Last-Translator: 张志文 <what0o0@qq.com>\n"
+        "Language-Team: Chinese (simplified)\n"
+        "Language: zh_CN\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: com/panayotis/jupidator/Updater.java:105
+#, java-format
+msgid   "This update is required for the smooth updating of {0}"
+msgstr  "为了顺利升级 {0}，必须先升级 jupidator"
+
+#: com/panayotis/jupidator/Updater.java:305
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:143
+msgid   "Application cancelled restart"
+msgstr  "应用程序取消重启"
+
+#: com/panayotis/jupidator/data/UpdaterAppElements.java:52
+#, java-format
+msgid   "Jupidator for {0}"
+msgstr  ""
+
+#: com/panayotis/jupidator/elements/ElementChstatus.java:48
+#, java-format
+msgid   "Unable to provide empty attribute for file {0}"
+msgstr  "无法为文件{0}提供空属性。"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:116
+#, java-format
+msgid   "File {0} already downloaded"
+msgstr  "文件{0}已经下载"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:123
+#, java-format
+msgid   "Invalid compression type: {0}"
+msgstr  "无效的压缩类型。{0}"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:126
+#, java-format
+msgid   "Can not initialize download file {0}"
+msgstr  ""
+
+#: com/panayotis/jupidator/elements/ElementFile.java:130
+#, java-format
+msgid   "Unable to create directory structure under {0}"
+msgstr  "无法初始化下载文件{0}"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:134
+#, java-format
+msgid   "Could not remove old download file {0}"
+msgstr  "无法删除旧的下载文件 {0}"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:136
+#, java-format
+msgid   "Could not remove old temporary file {0}"
+msgstr  "无法删除旧的临时文件 {0}"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:144
+#, java-format
+msgid   "File {0} already exists"
+msgstr  "文件{0}已经存在"
+
+#: com/panayotis/jupidator/elements/ElementFile.java:152
+#, java-format
+msgid   "Unable to delete downloaded file {0}"
+msgstr  "无法删除下载的文件{0}"
+
+#: com/panayotis/jupidator/elements/ElementRm.java:54
+#, java-format
+msgid   "File {0} will be deleted, if exists."
+msgstr  "如果存在文件{0}，将被删除。"
+
+#: com/panayotis/jupidator/elements/FileUtils.java:113
+#, java-format
+msgid   "Path {0} is not writable."
+msgstr  "路径{0}不可写。"
+
+#: com/panayotis/jupidator/elements/FileUtils.java:311
+#, java-format
+msgid   "Unable to delete file {0}"
+msgstr  "无法删除文件{0}"
+
+#: com/panayotis/jupidator/elements/compression/MultiFileCompression.java:65
+#, java-format
+msgid   "Unable to unpack under {0}"
+msgstr  "无法解压到{0}"
+
+#: com/panayotis/jupidator/elements/mirror/MirrorList.java:52
+#, java-format
+msgid   "Request URL {0}"
+msgstr  "请求 URL {0}"
+
+#: com/panayotis/jupidator/elements/mirror/MirrorList.java:63
+#, java-format
+msgid   "File {0} sucessfully downloaded"
+msgstr  "文件 {0} 下载成功"
+
+#: com/panayotis/jupidator/elements/mirror/MirrorList.java:68
+msgid   "Unable to download file "
+msgstr  "无法下载文件"
+
+#: com/panayotis/jupidator/elements/security/PermissionManager.java:91
+msgid   "Unable to initialize restart"
+msgstr  "无法初始化重启"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:52
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:57
+#, java-format
+msgid   "A new version of {0} is available!"
+msgstr  "有新版可用 {0}"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:53
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:58
+#, java-format
+msgid   "{0} version {1} is now available"
+msgstr  "{0} 版本 {1} 现已推出"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:54
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:59
+#, java-format
+msgid   "you have {0}"
+msgstr  "当前版本 {0}"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:63
+#, java-format
+msgid   "Welcome to the installation of {0}"
+msgstr  "欢迎初始化 {0}"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:65
+msgid   "Installation library"
+msgstr  "安装库"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:70
+msgid   "More info can be found at:"
+msgstr  "更多信息请见："
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:71
+msgid   "Do you want to see the detailed changelog? [Y/n] "
+msgstr  "是否查看更新详情？[Y/n]"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:75
+msgid   "Do you want to see the full file list? [Y/n] "
+msgstr  "是否查看完整文件列表？[Y/n]"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:79
+msgid   "Do you want to (S)kip this version, (R)emind later or (I)nstall? [s/"
+        "r/i] "
+msgstr  "是否跳过(S)当前版本，以后再提醒(R)或者安装(I)？[s/r/i]"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:82
+msgid   "Do you want to (R)emind later or (I)nstall? [r/i] "
+msgstr  "以后提醒(R)或者安装(I)？[r/i]"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:102
+msgid   "Wrong answer."
+msgstr  "错误命令"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:109
+msgid   "Thank you for using Jupidator"
+msgstr  "感谢使用 Jupidator"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:114
+#, java-format
+msgid   "Error: {0}"
+msgstr  "错误：{0}"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:118
+msgid   "Downloading successfull"
+msgstr  "下载成功"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:119
+msgid   "Press [RETURN] to restart the application"
+msgstr  "按回车键重启应用程序"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:120
+msgid   "Press [RETURN] to finalize the update"
+msgstr  "按回车键完成更新"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:126
+msgid   "Cancel installation"
+msgstr  "取消安装"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:131
+#, java-format
+msgid   "Downloading {0}, {1} percent completed."
+msgstr  "正在下载{0}, 完成{1}%"
+
+#: com/panayotis/jupidator/gui/console/ConsoleGUI.java:135
+msgid   "Please wait..."
+msgstr  "请稍等..."
+
+#: com/panayotis/jupidator/gui/swing/AboutDialog.java:77
+msgid   "About Jupidator"
+msgstr  "关于 Jupidator"
+
+#: com/panayotis/jupidator/gui/swing/AboutDialog.java:82
+msgid   "Thank you"
+msgstr  "感谢"
+
+#: com/panayotis/jupidator/gui/swing/AboutDialog.java:97
+msgid   "Version:"
+msgstr  "版本："
+
+#: com/panayotis/jupidator/gui/swing/AboutDialog.java:108
+msgid   "Jupidator is a library for automatic updating of applications."
+msgstr  "Jupidator是一个用于自动更新应用程序的库。"
+
+#: com/panayotis/jupidator/gui/swing/AboutDialog.java:111
+msgid   "It is open source under the LGPL license."
+msgstr  "它是LGPL许可下的开源项目。"
+
+#: com/panayotis/jupidator/gui/swing/AboutDialog.java:114
+msgid   "More info can be found in: http://jupidator.sourceforge.net"
+msgstr  "更多信息请见：http://jupidator.sourceforge.net"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:97
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:317
+msgid   "Show Actions"
+msgstr  "显示操作"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:97
+msgid   "Show Versions"
+msgstr  "显示版本"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:99
+msgid   "Actions"
+msgstr  "操作"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:99
+msgid   "Release Notes"
+msgstr  "发行说明"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:152
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:146
+msgid   "Cancel"
+msgstr  "取消"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:163
+msgid   "Downloading..."
+msgstr  "正在下载..."
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:183
+msgid   "On the Web"
+msgstr  "在网上"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:234
+msgid   "Details"
+msgstr  "详情"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:247
+msgid   "Remind me later"
+msgstr  "稍后提示"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:255
+msgid   "Install"
+msgstr  "安装"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:263
+msgid   "Skip"
+msgstr  "跳过"
+
+#: com/panayotis/jupidator/gui/swing/SwingDialog.java:275
+msgid   "WARNING! This update requires elevated privileges!"
+msgstr  "警告！本次更新需要提升权限!"
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:60
+#, java-format
+msgid   "New version of {0} found!"
+msgstr  "发现{0}的新版本!"
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:123
+msgid   "Processing update"
+msgstr  "处理更新"
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:125
+msgid   "Deploying files..."
+msgstr  "正在部署文件..."
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:135
+msgid   "Successfully downloaded updates"
+msgstr  "成功下载更新"
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:136
+msgid   "Finalize update"
+msgstr  "完成更新"
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:136
+msgid   "Restart application"
+msgstr  "重启应用程序"
+
+#: com/panayotis/jupidator/gui/swing/SwingGUI.java:152
+#, java-format
+msgid   "Download speed: {0}"
+msgstr  "下载速度：{0}"
+
+#: com/panayotis/jupidator/loglist/creators/HTMLCreator.java:45
+msgid   "Version"
+msgstr  "版本"
+
+#: com/panayotis/jupidator/loglist/creators/TextCreator.java:38
+msgid   "List of changes:"
+msgstr  "更新列表："
