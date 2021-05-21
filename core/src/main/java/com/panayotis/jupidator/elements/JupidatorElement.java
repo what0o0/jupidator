@@ -82,7 +82,7 @@ public abstract class JupidatorElement implements Serializable {
     public final String getDestinationFile() {
         if (destdir.equals(""))
             return filename;
-        return destdir + (destdir.endsWith("/") ? "" : "/") + filename;
+        return destdir + (destdir.endsWith(File.separator) ? "" : File.separator) + filename;
     }
 
     public String getFileName() {
