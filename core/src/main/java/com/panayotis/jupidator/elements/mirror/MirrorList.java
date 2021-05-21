@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 
 import static com.panayotis.jupidator.i18n.I18N._t;
@@ -76,18 +77,14 @@ public class MirrorList {
     }
 
     private static String download(URL from, File to, BufferListener watcher) {
-        HttpURLConnection connection = null;
+        URLConnection connection = null;
         try {
-            connection = (HttpURLConnection) from.openConnection();
+            connection =  from.openConnection();
             connection.setUseCaches(true);
             connection.connect();
-//            System.out.println(connection.getResponseCode());
-            return FileUtils.copyFile(from.openStream(), new FileOutputStream(to), watcher, true);
+            return FileUtils.copyFile(connection.getInputStream(), new FileOutputStream(to), watcher, true);
         } catch (Exception e) {
             return e.getMessage();
-        } finally {
-            if (connection != null)
-                connection.disconnect();
         }
     }
 }
