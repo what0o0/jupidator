@@ -81,7 +81,6 @@ public class XEKill extends XNativeElement {
             ArrayList<String> args = new ArrayList<String>();
             args.add("/PID");
             args.add(proc);
-            args.add(target);
             if (!signal.equals(""))
                 args.add(signal);
             kill = new XNativeCommand("taskkill.exe", args, null);
