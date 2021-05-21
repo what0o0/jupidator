@@ -19,12 +19,7 @@
  */
 package jupidator.launcher;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 /**
  *
@@ -40,9 +35,9 @@ public abstract class XFileModElement extends XTargetElement {
         if (!f.exists())
             return true;
         if (f.isDirectory()) {
-            File dir[] = f.listFiles();
-            for (int i = 0; i < dir.length; i++)
-                if (!safeDelete(dir[i]))
+            File[] dir = f.listFiles();
+            for (File file : dir)
+                if (!safeDelete(file))
                     return false;
         }
         return f.delete();
@@ -52,7 +47,7 @@ public abstract class XFileModElement extends XTargetElement {
         if (OperatingSystem.isWindows && f.getName().startsWith("."))
             try {
                 Runtime.getRuntime().exec(new String[]{"attrib", "+H", f.getAbsolutePath()});
-            } catch (IOException ex) {
+            } catch (IOException ignored) {
             }
     }
 
@@ -87,13 +82,13 @@ public abstract class XFileModElement extends XTargetElement {
 
             boolean status = true;
             BufferedInputStream in = null;
-            BufferedOutputStream out = null;
+            RandomAccessFile out = null;
             byte[] buffer = new byte[4000];
             int hm;
             try {
                 in = new BufferedInputStream(new FileInputStream(from));
-                out = new BufferedOutputStream(new FileOutputStream(to));
-                while ((hm = in.read(buffer)) > 0)
+                out = new RandomAccessFile(to,"rw");
+                while ((hm = in.read(buffer)) != -1)
                     out.write(buffer, 0, hm);
                 shouldMakeHidden(to);
             } catch (IOException ex) {
