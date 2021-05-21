@@ -45,6 +45,6 @@ public class ElementKill extends ElementNative {
 
     @Override
     public XElement getExecElement() {
-        return new XEKill(getDestinationFile(), signal);
+        return new XEKill(getFileName(), signal);
     }
 }
