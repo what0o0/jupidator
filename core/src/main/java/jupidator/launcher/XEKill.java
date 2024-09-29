@@ -71,8 +71,10 @@ public class XEKill extends XNativeElement {
                 proclist.add(next_pid);
             }
         }
-        for (String id : proclist)
-            exec(getKillCmd(id));
+        for (String id : proclist) {
+            String output = exec(getKillCmd(id));
+            Visuals.info("Kill output: " + output);
+        }
     }
 
     private XNativeCommand getKillCmd(String proc) {
