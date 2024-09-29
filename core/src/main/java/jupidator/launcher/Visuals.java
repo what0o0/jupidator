@@ -77,9 +77,11 @@ public class Visuals extends javax.swing.JFrame {
             showWorking();
         if (fout != null) {
             try {
-                fout.append(message).append("\n");
+                SimpleDateFormat sdf = new SimpleDateFormat("[HH:mm:ss.SSS] ");
+                String currentTime = sdf.format(new Date());
+                fout.append(currentTime).append(message).append("\n");
                 fout.flush();
-                cacheOut.append(message).append("\n");
+                cacheOut.append(currentTime).append(message).append("\n");
             } catch (IOException ignored) {
             }
         }
