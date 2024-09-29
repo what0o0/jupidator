@@ -38,20 +38,30 @@ public abstract class XNativeElement extends XTargetElement {
     }
 
     protected static String exec(XNativeCommand command) {
-        StringBuilder output = new StringBuilder();
+        final StringBuilder output = new StringBuilder();
         Visuals.info("Executing " + Arrays.toString(command.getArgs()));
         try {
-            Process p = Runtime.getRuntime().exec(command.getArgs());
+            final Process p = Runtime.getRuntime().exec(command.getArgs());
             if (command.input != null && command.input.length() > 0) {
                 BufferedWriter w = new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));
                 w.write(command.input);
                 w.close();
             }
-            String line;
-            BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            while ((line = r.readLine()) != null)
-                output.append(line).append('\n');
+            Thread outputTask = new Thread(new Runnable() {
+                public void run() {
+                    try {
+                        String line;
+                        BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
+                        while ((line = r.readLine()) != null)
+                            output.append(line).append('\n');
+                    } catch (Exception ex) {
+                        output.append(ex).append("\n");
+                    }
+                }
+            }, "execute-output-task");
+            outputTask.start();
             p.waitFor();
+            outputTask.join();
             if (p.exitValue() == 0)
                 return output.toString();
         } catch (Exception ex) {
